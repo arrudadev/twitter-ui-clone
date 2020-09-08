@@ -41,7 +41,62 @@ export const Avatar = styled.div`
   left: 15px;
 `;
 
-export const ProfileData = styled.div``;
+export const ProfileData = styled.div`
+  padding: min(calc(10vw + 7px), 67px) 16px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  > h1 {
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  > h2 {
+    font-weight: normal;
+    font-size: 15px;
+
+    color: var(--gray);
+  }
+
+  > p {
+    font-size: 15px;
+    margin-top: 11px;
+
+    > a {
+      text-decoration: none;
+      color: var(--twitter);
+    }
+  }
+
+  > ul {
+    display: flex;
+
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    > li {
+      display: flex;
+
+      font-size: 15px;
+      color: var(--gray);
+
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      > svg {
+        fill: var(--gray);
+        margin-right: 5px;
+      }
+    }
+  }
+`;
 
 const iconCSS = css`
   width: 20px;
@@ -58,4 +113,15 @@ export const CakeIcon = styled(Cake)`
   ${iconCSS}
 `;
 
-export const Followage = styled.div``;
+export const Followage = styled.div`
+  display: flex;
+
+  > span {
+    font-size: 15px;
+    color: var(--gray);
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+`;

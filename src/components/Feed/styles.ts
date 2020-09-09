@@ -37,3 +37,14 @@ export const Tab = styled.div`
     background: var(--twitter-dark-hover);
   }
 `;
+
+export const Tweets = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+
+  @media (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+`;

@@ -1,4 +1,5 @@
 import React from 'react';
+import StickyBox from 'react-sticky-box';
 
 import {
   Container,
@@ -10,6 +11,7 @@ import {
 
 import FollowSuggestion from '../FollowSuggestion';
 import List from '../List';
+import News from '../News';
 
 const SideBar: React.FC = () => {
   return (
@@ -19,30 +21,42 @@ const SideBar: React.FC = () => {
         <SearchIcon />
       </SearchWrapper>
 
-      <Body>
-        <List
-          title="Talvez você curta"
-          elements={[
-            <FollowSuggestion
-              name="Alexandre Monteiro"
-              nickname="@monteiroalexandre"
-            />,
-            <FollowSuggestion
-              name="Alexandre Monteiro"
-              nickname="@monteiroalexandre"
-            />,
-            <FollowSuggestion
-              name="Alexandre Monteiro"
-              nickname="@monteiroalexandre"
-            />,
-          ]}
-        />
+      <StickyBox>
+        <Body>
+          <List
+            title="Talvez você curta"
+            elements={[
+              <FollowSuggestion
+                name="Alexandre Monteiro"
+                nickname="@monteiroalexandre"
+              />,
+              <FollowSuggestion
+                name="Alexandre Monteiro"
+                nickname="@monteiroalexandre"
+              />,
+              <FollowSuggestion
+                name="Alexandre Monteiro"
+                nickname="@monteiroalexandre"
+              />,
+            ]}
+          />
 
-        <List
-          title="Talvez você curta"
-          elements={[<h1>teste</h1>, <h1>teste</h1>, <h1>teste</h1>]}
-        />
-      </Body>
+          <List
+            title="O que está acontecendo"
+            elements={[
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+            ]}
+          />
+        </Body>
+      </StickyBox>
     </Container>
   );
 };

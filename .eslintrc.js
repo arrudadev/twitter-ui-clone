@@ -70,5 +70,6 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'react/prop-types': 'off',
     'no-restricted-syntax': 'off',
+    'react/no-array-index-key': 'off',
   },
 };

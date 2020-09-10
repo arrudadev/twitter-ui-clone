@@ -8,6 +8,7 @@ import {
   Body,
 } from './styles';
 
+import FollowSuggestion from '../FollowSuggestion';
 import List from '../List';
 
 const SideBar: React.FC = () => {
@@ -21,7 +22,20 @@ const SideBar: React.FC = () => {
       <Body>
         <List
           title="Talvez você curta"
-          elements={[<h1>teste</h1>, <h1>teste</h1>, <h1>teste</h1>]}
+          elements={[
+            <FollowSuggestion
+              name="Alexandre Monteiro"
+              nickname="@monteiroalexandre"
+            />,
+            <FollowSuggestion
+              name="Alexandre Monteiro"
+              nickname="@monteiroalexandre"
+            />,
+            <FollowSuggestion
+              name="Alexandre Monteiro"
+              nickname="@monteiroalexandre"
+            />,
+          ]}
         />
 
         <List

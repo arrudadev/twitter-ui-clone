@@ -1,17 +1,17 @@
 <h1>
-  <a href="#">
+  <a href="https://monteiro-alexandre-twitter-ui-clone.netlify.app/">
     Twitter UI Clone
   </a>
 </h1>
 
-![build](https://github.com/monteiro-alexandre/discord-ui-clone/workflows/build/badge.svg?branch=master)
+![build](https://github.com/monteiro-alexandre/twitter-ui-clone/workflows/build/badge.svg?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 Twitter UI clone for study purposes.
-<p>Deployed <a href="#">here</a>.</p>
+<p>Deployed <a href="https://monteiro-alexandre-twitter-ui-clone.netlify.app/">here</a>.</p>
 
 <p align="center">
-  <img alt="TwitterUiCloneDesktop" src=".github/assets/twitter-ui-clone.png" width="100%">
+  <img alt="TwitterUiClone" src=".github/assets/twitter-ui-clone.png" width="100%">
 </p>
 
 ## 💻 Technologies

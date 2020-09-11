@@ -16,3 +16,4 @@ export {
 } from 'styled-icons/heroicons-outline';
 export { RocketseatIcon as Rocketseat } from '../components/RocketseatIcon';
 export { Twitter } from 'styled-icons/feather';
+export { AddTweetIcon as AddTweet } from '../components/AddTweetIcon';

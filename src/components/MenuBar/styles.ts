@@ -13,6 +13,7 @@ import {
   DotsCircleHorizontal,
   Bookmark,
   Article,
+  AddTweet,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -217,5 +218,25 @@ export const ExitIcon = styled(ExitToApp)`
         color: var(--like);
       }
     }
+  }
+`;
+
+export const AddTweetIcon = styled(AddTweet)`
+  display: inline-block;
+
+  width: 25px;
+  height: 25px;
+
+  color: var(--white);
+  fill: var(--white);
+
+  flex-shrink: 0;
+
+  position: relative;
+  top: -8px;
+  left: -8px;
+
+  @media (min-width: 1280px) {
+    display: none;
   }
 `;

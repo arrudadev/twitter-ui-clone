@@ -17,6 +17,7 @@ import {
   ExitIcon,
   ListsIcon,
   DotsCircleHorizontalIcon,
+  AddTweetIcon,
 } from './styles';
 
 import Button from '../Button';
@@ -68,6 +69,7 @@ const MenuBar: React.FC = () => {
         </MenuButton>
 
         <Button>
+          <AddTweetIcon />
           <span>Tweetar</span>
         </Button>
       </TopSide>

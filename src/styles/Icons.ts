@@ -7,7 +7,12 @@ export {
   LocationOn,
   Search,
 } from 'styled-icons/material-outlined';
-export { Person, Cake, Favorite } from 'styled-icons/material';
-export { ArrowLeft } from 'styled-icons/heroicons-solid';
-export { Chat } from 'styled-icons/heroicons-outline';
+export { Person, Cake, Favorite, Article } from 'styled-icons/material';
+export { ArrowLeft, Hashtag } from 'styled-icons/heroicons-solid';
+export {
+  Chat,
+  Bookmark,
+  DotsCircleHorizontal,
+} from 'styled-icons/heroicons-outline';
 export { RocketseatIcon as Rocketseat } from '../components/RocketseatIcon';
+export { Twitter } from 'styled-icons/feather';

@@ -6,10 +6,13 @@ import {
   Home,
   Notifications,
   Email,
-  FavoriteBorder,
   Person,
   ExitToApp,
-  Rocketseat,
+  Twitter,
+  Hashtag,
+  DotsCircleHorizontal,
+  Bookmark,
+  Article,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -41,12 +44,12 @@ export const TopSide = styled.div`
   }
 `;
 
-export const Logo = styled(Rocketseat)`
+export const Logo = styled(Twitter)`
   width: 41px;
   height: 41px;
 
   > path {
-    fill: var(--twitter);
+    fill: var(--white);
   }
 
   margin-bottom: 20px;
@@ -131,6 +134,10 @@ export const HomeIcon = styled(Home)`
   ${iconCSS}
 `;
 
+export const ExplorerIcon = styled(Hashtag)`
+  ${iconCSS}
+`;
+
 export const BellIcon = styled(Notifications)`
   ${iconCSS}
 `;
@@ -139,11 +146,19 @@ export const EmailIcon = styled(Email)`
   ${iconCSS}
 `;
 
-export const FavoriteIcon = styled(FavoriteBorder)`
+export const SavedItemsIcon = styled(Bookmark)`
+  ${iconCSS}
+`;
+
+export const ListsIcon = styled(Article)`
   ${iconCSS}
 `;
 
 export const ProfileIcon = styled(Person)`
+  ${iconCSS}
+`;
+
+export const DotsCircleHorizontalIcon = styled(DotsCircleHorizontal)`
   ${iconCSS}
 `;
 

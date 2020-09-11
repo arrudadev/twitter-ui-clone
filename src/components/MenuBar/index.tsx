@@ -6,14 +6,17 @@ import {
   Logo,
   MenuButton,
   HomeIcon,
+  ExplorerIcon,
   BellIcon,
   EmailIcon,
-  FavoriteIcon,
+  SavedItemsIcon,
   ProfileIcon,
   BottomSide,
   Avatar,
   ProfileData,
   ExitIcon,
+  ListsIcon,
+  DotsCircleHorizontalIcon,
 } from './styles';
 
 import Button from '../Button';
@@ -30,6 +33,11 @@ const MenuBar: React.FC = () => {
         </MenuButton>
 
         <MenuButton>
+          <ExplorerIcon />
+          <span>Explorar</span>
+        </MenuButton>
+
+        <MenuButton>
           <BellIcon />
           <span>Notificações</span>
         </MenuButton>
@@ -40,13 +48,23 @@ const MenuBar: React.FC = () => {
         </MenuButton>
 
         <MenuButton>
-          <FavoriteIcon />
-          <span>Favoritos</span>
+          <SavedItemsIcon />
+          <span>Items salvos</span>
+        </MenuButton>
+
+        <MenuButton>
+          <ListsIcon />
+          <span>Listas</span>
         </MenuButton>
 
         <MenuButton className="active">
           <ProfileIcon />
           <span>Perfil</span>
+        </MenuButton>
+
+        <MenuButton>
+          <DotsCircleHorizontalIcon />
+          <span>Mais</span>
         </MenuButton>
 
         <Button>

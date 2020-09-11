@@ -1,5 +1,8 @@
 import styled, { css } from 'styled-components';
 
+import BannerImage from '../../assets/banner.jpg';
+import ProfileImage from '../../assets/profile.jpg';
+
 import { LocationOn, Cake } from '../../styles/Icons';
 
 import Button from '../Button';
@@ -24,7 +27,8 @@ export const Banner = styled.div`
   width: 100%;
   height: min(33vh, 199px);
 
-  background: var(--twitter);
+  background: url(${BannerImage}) no-repeat;
+  background-size: cover;
 
   position: relative;
 `;
@@ -33,10 +37,11 @@ export const Avatar = styled.div`
   width: max(45px, min(135px, 22vw));
   height: max(45px, min(135px, 22vw));
 
-  border: 3.75px solid var(--primary);
+  border: 3.75px solid var(--gray);
   border-radius: 50%;
 
-  background: var(--gray);
+  background-image: url(${ProfileImage});
+  background-size: contain;
 
   position: absolute;
   bottom: max(-60px, -10vw);

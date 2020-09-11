@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import ProfileImage from '../../assets/profile.jpg';
+
 import {
   Home,
   Notifications,
@@ -160,7 +162,8 @@ export const Avatar = styled.div`
 
   border-radius: 50%;
 
-  background: var(--gray);
+  background-image: url(${ProfileImage});
+  background-size: contain;
 `;
 
 export const ProfileData = styled.div`

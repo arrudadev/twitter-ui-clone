@@ -1,5 +1,8 @@
 import styled, { css } from 'styled-components';
 
+import PostImage from '../../assets/post.jpg';
+import ProfileImage from '../../assets/profile.jpg';
+
 import { Chat, Rocketseat, Favorite } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -48,7 +51,8 @@ export const Avatar = styled.div`
 
   flex-shrink: 0;
 
-  background: var(--gray);
+  background-image: url(${ProfileImage});
+  background-size: contain;
 
   position: absolute;
   top: 0;
@@ -108,7 +112,9 @@ export const ImageContent = styled.div`
   width: 100%;
   height: min(285px, max(175px, 41vw));
 
-  background: var(--outline);
+  background-image: url(${PostImage});
+  background-size: contain;
+
   border-radius: 14px;
 
   cursor: pointer;

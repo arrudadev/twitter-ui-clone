@@ -37,7 +37,9 @@ const Tweet: React.FC = () => {
             <time>8 de set</time>
           </Header>
 
-          <Description>Descrição de um tweet</Description>
+          <Description>
+            Twitter UI clone, developed with ReactJs and Styled Components
+          </Description>
 
           <ImageContent />
 

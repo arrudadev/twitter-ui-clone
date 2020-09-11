@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import ProfileImage from '../../assets/profile.jpg';
+
 import Button from '../Button';
 
 export const Container = styled.div`
@@ -16,7 +18,8 @@ export const Avatar = styled.div`
   width: 49px;
   height: 49px;
 
-  background: var(--gray);
+  background-image: url(${ProfileImage});
+  background-size: contain;
 
   border-radius: 50%;
 
